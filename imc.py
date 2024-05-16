@@ -13,7 +13,7 @@ def data():
         peso = float(request.form['peso'])
         altezza = float(request.form['altezza'])
         imc = peso / (altezza ** 2)
-        return render_template('dati.html', dati_form = request.form, imc = imc)
+        return render_template('dati.html', imc = imc)
 
 if __name__ == '__main__':
   app.run(host='0.0.0.0', port=3245, debug=True)

@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Covid data</title>
+    </head>
+    <body>
+    <form action="/info" method="GET">
+        {% for numero in tabella %}
+        <input type="radio" name="id" value="{{numero}}">{{ numero }}<br />
+        {% endfor %}
+        <input type="submit" value="Info">
+    </form>
+    </body>
+</html>
