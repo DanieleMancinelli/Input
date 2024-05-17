@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Homepage</title>
+    </head>
+    <body>
+        <form action="/search" method = "GET">
+            <label>Seleziona una regione: </label><select name = "menu">
+            <option value=""></option> 
+            {% for regione in lista_regioni%}
+                <option value="{{regione}}">{{regione}}</option> 
+            {% endfor %}
+            </select>
+            <p><input type = "submit" value = "Clicca per conoscere i dati" /></p>
+        </form>
+    </body>
+</html>
