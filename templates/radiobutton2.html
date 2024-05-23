@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>citta</title>
+    </head>
+    <body>
+        <form action="/elencoClienti/{{nazione}}/{{citta}}" method="GET">
+            {% for city, count in cities %}
+                <input type="radio" id="{{ city }}" name="city" value="{{ city }}">
+                <label for="{{ city }}">{{ city }} ({{ count }} cliente/i) </label><br>
+            {% endfor %}
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>

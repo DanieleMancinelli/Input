@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>Regioni italiane</title>
+    </head>
+    <body>
+        {% for nazione in lista %}
+            <a href="/elencoCitta/{{nazione}}">{{ nazione }}</a><br>
+        {% endfor %}
+    </body>
+</html>
